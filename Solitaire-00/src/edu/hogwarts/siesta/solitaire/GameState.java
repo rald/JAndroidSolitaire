@@ -1,4 +1,4 @@
-package edu.hogwarts.siesta.boggle;
+package edu.hogwarts.siesta.solitaire;
 
 enum GameState {
 	GAME_INIT,

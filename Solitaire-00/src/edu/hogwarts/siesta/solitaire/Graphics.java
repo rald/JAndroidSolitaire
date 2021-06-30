@@ -1,4 +1,4 @@
-package edu.hogwarts.siesta.boggle;
+package edu.hogwarts.siesta.solitaire;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
@@ -58,7 +58,7 @@ class Graphics {
 		long elapsedTime=System.currentTimeMillis()-startTime;
 		double pos=elapsedTime*0.125;
 		for(int i=0;i<text.length();i++) {
-			double posx=(pos+w*size*i)%(Animation.SCREEN_WIDTH-w*size)+cx;
+			double posx=(pos+w*size*i)%(SolitaireView.SCREEN_WIDTH-w*size)+cx;
 			double posy=h*size+Math.sin(pos/(h*size/2)+i)*(h*size/2)+cy;
 			drawChar(canvas,font,w,h,text.charAt(i),(int)posx,(int)posy,size);
 		}

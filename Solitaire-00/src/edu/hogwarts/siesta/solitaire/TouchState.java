@@ -1,4 +1,4 @@
-package edu.hogwarts.siesta.boggle;
+package edu.hogwarts.siesta.solitaire;
 
 enum TouchState {
 	TOUCH_DOWN,
